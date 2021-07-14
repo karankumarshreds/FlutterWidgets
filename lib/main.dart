@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main () => runApp(
     MyApp()
@@ -13,10 +14,19 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
             child: Column(
                 children: <Widget>[
-                CircleAvatar(
-                  radius: 50,
-                  backgroundImage: AssetImage('images/karan.jpg')
-                )
+                  CircleAvatar(
+                    radius: 50,
+                    backgroundImage: AssetImage('images/karan.jpg')
+                  ),
+                  Text(
+                    'Karan Kumar',
+                    style: TextStyle(
+                      fontSize: 50,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Pacifico',
+                      color: Colors.white
+                    ),
+                  )
                 ]
             )
         )
