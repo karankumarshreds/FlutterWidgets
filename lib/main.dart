@@ -11,20 +11,14 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Column(
-                mainAxisSize: MainAxisSize.min,
-                // crossAxisAlignment: CrossAxisAlignment.baseline,
+            child: Column(
                 children: <Widget>[
-                  Square(),
-                  Square(),
-                  Square(),
+                CircleAvatar(
+                  radius: 50,
+                  backgroundImage: AssetImage('images/karan.jpg')
+                )
                 ]
-              )
-            ],
-          )
+            )
         )
       )
     );
