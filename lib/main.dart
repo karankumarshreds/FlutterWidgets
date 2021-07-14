@@ -12,11 +12,18 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Row(
-            children: <Widget>[
-              Square(),
-              Square(),
-              Square(),
-            ]
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                // crossAxisAlignment: CrossAxisAlignment.baseline,
+                children: <Widget>[
+                  Square(),
+                  Square(),
+                  Square(),
+                ]
+              )
+            ],
           )
         )
       )
@@ -33,7 +40,7 @@ class Square extends StatelessWidget {
       height: 100,
       margin: const EdgeInsets.all(5),
       child: Text(
-          'Hey there !'
+          'Hey there !!'
       ),
     );
   }
