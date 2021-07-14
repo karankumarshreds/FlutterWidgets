@@ -11,19 +11,30 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(
-              color: Colors.white,
-              child: Text(
-                'Hey there!',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
-                  letterSpacing: 1
-                ),
-              )
+          child: Row(
+            children: <Widget>[
+              Square(),
+              Square(),
+              Square(),
+            ]
           )
         )
       )
+    );
+  }
+}
+
+class Square extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.white,
+      width: 100,
+      height: 100,
+      margin: const EdgeInsets.all(5),
+      child: Text(
+          'Hey there !'
+      ),
     );
   }
 }
