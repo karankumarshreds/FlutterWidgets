@@ -13,10 +13,13 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   CircleAvatar(
-                    radius: 50,
+                    radius: 80,
                     backgroundImage: AssetImage('images/karan.jpg')
+                    ,
+                    
                   ),
                   Text(
                     'Karan Kumar',
@@ -31,9 +34,15 @@ class MyApp extends StatelessWidget {
                       'FLUTTER DEVELOPER',
                       style: TextStyle(
                         fontSize: 20,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500
+                        color: Colors.white70,
+                        fontWeight: FontWeight.w600
                       )
+                  ),
+                  SizedBox(
+                    width: 200,
+                    child: Divider(
+                      color: Colors.white, 
+                    ),
                   ),
                   Card(
                     color: Colors.white,
