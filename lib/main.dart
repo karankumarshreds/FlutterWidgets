@@ -35,15 +35,20 @@ class MyApp extends StatelessWidget {
                         fontWeight: FontWeight.w500
                       )
                   ),
-                  Container(
+                  Card(
                     color: Colors.white,
                     margin: EdgeInsets.symmetric(
                       vertical: 10,
                       horizontal: 30
                     ),
-                    padding: EdgeInsets.all(10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                    elevation: 20,
+                    child: Container(
+                    padding: EdgeInsets.symmetric(
+                      vertical: 10,
+                      horizontal: 20
+                    ),
+                      child: Row(
+                      // mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           Icon(
                               Icons.phone,
@@ -51,7 +56,7 @@ class MyApp extends StatelessWidget {
                           ),
                           // to add space between other children
                           SizedBox(
-                            width: 50.0,
+                            width: 20.0,
                           ),
                           Text(
 
@@ -64,16 +69,22 @@ class MyApp extends StatelessWidget {
                           )
                         ]
                     )
+                    )
                   )
                   ,
-                  Container(
+                  Card(
                     color: Colors.white,
                     margin: EdgeInsets.symmetric(
                       vertical: 10,
                       horizontal: 30
                     ),
-                    padding: EdgeInsets.all(10),
-                    child: Row(
+                    elevation: 20,
+                    child: Container (
+                      padding: EdgeInsets.symmetric(
+                        vertical: 10,
+                        horizontal: 20
+                      ),
+                      child: Row(
                       children: <Widget>[
                         Icon(Icons.email, color: Colors.teal.shade900),
                         SizedBox(width: 20,),
@@ -85,6 +96,7 @@ class MyApp extends StatelessWidget {
                           ),
                         )
                       ],
+                    )
                     )
                   )
                 ]
