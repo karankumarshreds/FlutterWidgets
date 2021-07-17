@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+// import 'package:flutter/services.dart';
 
 void main () => runApp(
     MyApp()
@@ -63,6 +63,28 @@ class MyApp extends StatelessWidget {
                               ),
                           )
                         ]
+                    )
+                  )
+                  ,
+                  Container(
+                    color: Colors.white,
+                    margin: EdgeInsets.symmetric(
+                      vertical: 10,
+                      horizontal: 30
+                    ),
+                    padding: EdgeInsets.all(10),
+                    child: Row(
+                      children: <Widget>[
+                        Icon(Icons.email, color: Colors.teal.shade900),
+                        SizedBox(width: 20,),
+                        Text(
+                          'illuminatekaran@gmail.com',
+                          style: TextStyle(
+                            color: Colors.teal.shade900,
+                            fontSize: 20
+                          ),
+                        )
+                      ],
                     )
                   )
                 ]
